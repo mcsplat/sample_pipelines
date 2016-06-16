@@ -23,7 +23,7 @@ resources:
 
   - name: box-image
     type: image
-    integration: ric03uec-dh
+    integration: ECS
     source:
       name: "aye0aye/box"
       isPull: false
@@ -48,14 +48,14 @@ resources:
 
   - name: env-prod
     type: ecsCluster
-    integration: ric03uec-ecs
+    integration: ECS
     source:
       name : "prod-aws" #name of the cluster we are deploying
       region: "us-east-1"
 
   - name: env-test
     type: ecsCluster
-    integration: ric03uec-ecs
+    integration: ECS
     source:
       name : "test-aws" #name of the cluster we are deploying
       region: "us-east-1"
